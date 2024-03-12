@@ -2,25 +2,32 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target;  // The target GameObject that the camera will follow
-    public Vector3 offset;    // The offset distance between the camera and the target
-    public float smoothSpeed = 0.125f;  // The smoothness of the camera follow movement
+    public Transform target;
+    public Vector3 offset;
+    public float smoothSpeed = 2f;
+    public float sensitivity = 20.0f;
 
+    private float rotationX = 0f;
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        transform.rotation = target.rotation;
+    }
     void LateUpdate()
     {
+        float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
+
+        rotationX -= mouseY;
+        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
+
+        transform.RotateAround(target.position, Vector3.up, mouseX);
+        transform.rotation = Quaternion.Euler(rotationX, transform.rotation.eulerAngles.y, 0f);
         if (target != null)
         {
-            // Calculate the desired position of the camera based on the target's position and offset
             Vector3 desiredPosition = target.position + offset;
-
-            // Smoothly move the camera towards the desired position using SmoothDamp
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-
-            // Update the camera's position
             transform.position = smoothedPosition;
-
-            // Make the camera look at the target
-            transform.LookAt(target);
         }
     }
 }
