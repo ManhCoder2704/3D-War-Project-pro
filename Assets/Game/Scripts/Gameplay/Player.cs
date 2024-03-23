@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
             {
                 transform.LookAt(transform.position + moveDirection);
             }
-            ChangeAnim(Anim.Running);
+            ChangeAnim(Anim.Run);
             _player.AddForce(moveDirection * speed);
         }
         else
@@ -34,6 +34,14 @@ public class Player : MonoBehaviour
             running = false;
             ChangeAnim(Anim.Idle);
             _player.velocity = Vector3.zero;
+        }
+        if (Input.GetKey(KeyCode.E))
+        {
+            ChangeAnim(Anim.Dig);
+        }
+        if (Input.GetKey(KeyCode.Q))
+        {
+            ChangeAnim(Anim.Pointing);
         }
     }
 

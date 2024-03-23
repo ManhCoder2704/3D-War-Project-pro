@@ -1,0 +1,946 @@
+fileFormatVersion: 2
+guid: be2001755f1a33a48b575d14e04efce7
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_effects_smiley
+    second: {fileID: 2100000, guid: 19e386dc3bc4c494dbd76447fc6884fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_demo_demoman_head_red
+    second: {fileID: 2100000, guid: 09e943a0765b0a74a8bc1ea611ebbba6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_demo_demoman_red
+    second: {fileID: 2100000, guid: 8c09ad8a426fd214ca487f59509b07be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_demo_eyeball_r
+    second: {fileID: 2100000, guid: fcffe6ec2192c7440a5592be37e78c20, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Head' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: VisualSceneNode1
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode65
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode69
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode66
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode70
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode67
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode71
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode2
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode3
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode6
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode28
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode7
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode29
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode8
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode30
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode9
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode31
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode68
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode72
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode11
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode12
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode13
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode14
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode15
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode16
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode17
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode18
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode19
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode20
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode21
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode22
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode23
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode24
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode25
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode36
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode37
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode38
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode39
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode40
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode41
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode42
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode43
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode44
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode45
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode46
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode47
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode48
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode49
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode50
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode4
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode5
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VisualSceneNode53
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Man(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VisualSceneNode1
+      parentName: Man(Clone)
+      position: {x: -0, y: 0.480595, z: -0.010197099}
+      rotation: {x: 0.99791545, y: 0, z: -0, w: 0.064535044}
+      scale: {x: 1, y: 0.9999995, z: 0.9999995}
+    - name: VisualSceneNode2
+      parentName: VisualSceneNode1
+      position: {x: -0, y: -0.042025197, z: 0}
+      rotation: {x: -0.12881167, y: 0, z: -0, w: 0.9916691}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: VisualSceneNode3
+      parentName: VisualSceneNode2
+      position: {x: -0, y: -0.064931, z: -0.00000002}
+      rotation: {x: 0.18938014, y: 0, z: -0, w: 0.98190385}
+      scale: {x: 1, y: 0.9999996, z: 0.9999996}
+    - name: VisualSceneNode4
+      parentName: VisualSceneNode3
+      position: {x: -0, y: -0.058570698, z: 0}
+      rotation: {x: 0.098611094, y: 0, z: -0, w: 0.99512607}
+      scale: {x: 1, y: 1.0000004, z: 1.0000004}
+    - name: VisualSceneNode5
+      parentName: VisualSceneNode4
+      position: {x: -0, y: -0.0575393, z: 0.00000001}
+      rotation: {x: 0.15246233, y: 0, z: -0, w: 0.9883093}
+      scale: {x: 1, y: 1.0000005, z: 1.0000005}
+    - name: VisualSceneNode6
+      parentName: VisualSceneNode5
+      position: {x: -0.0277688, y: -0.022785999, z: -0.0352263}
+      rotation: {x: 0.74622273, y: 0.61213017, z: -0.25258943, w: 0.06816876}
+      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000006}
+    - name: VisualSceneNode7
+      parentName: VisualSceneNode6
+      position: {x: -0.00000008, y: -0.083348, z: -0.00000003}
+      rotation: {x: -0.14656591, y: 0.07317822, z: 0.66938084, w: 0.7246328}
+      scale: {x: 1.0000015, y: 1.0000005, z: 1.000001}
+    - name: VisualSceneNode8
+      parentName: VisualSceneNode7
+      position: {x: -0.13552299, y: 0.000000049999997, z: 0}
+      rotation: {x: -0.00084766716, y: 0.035635967, z: -0.009152671, w: 0.9993226}
+      scale: {x: 1.0000013, y: 1, z: 1.0000013}
+    - name: VisualSceneNode9
+      parentName: VisualSceneNode8
+      position: {x: -0.118444994, y: 0.00000002, z: -0.00000002}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VisualSceneNode10
+      parentName: VisualSceneNode9
+      position: {x: 0.0368901, y: -0.0581663, z: 0.008770269}
+      rotation: {x: 0.80320895, y: 0.15567501, z: 0.13831954, w: 0.55811155}
+      scale: {x: 1.0000011, y: 1.0000008, z: 1.0000011}
+    - name: VisualSceneNode11
+      parentName: VisualSceneNode9
+      position: {x: 0.026108999, y: -0.022618799, z: 0.028145999}
+      rotation: {x: -0.44296604, y: -0.048328824, z: 0.12962037, w: 0.8858014}
+      scale: {x: 1.000001, y: 1.0000007, z: 1.0000014}
+    - name: VisualSceneNode12
+      parentName: VisualSceneNode11
+      position: {x: -0.00000003, y: -0.029266499, z: -0.000000049999997}
+      rotation: {x: 0.03808632, y: 0.00000017136321, z: -0.00000055693044, w: 0.99927443}
+      scale: {x: 1, y: 1.0000008, z: 1.0000008}
+    - name: VisualSceneNode13
+      parentName: VisualSceneNode12
+      position: {x: -0.00000003, y: -0.0166474, z: 0}
+      rotation: {x: -0.21958134, y: 0, z: -0, w: 0.9755942}
+      scale: {x: 1, y: 1.000001, z: 1.000001}
+    - name: VisualSceneNode14
+      parentName: VisualSceneNode9
+      position: {x: 0.00527852, y: -0.060319297, z: 0.0393911}
+      rotation: {x: 0.0007373687, y: -0.7027738, z: 0.12674433, w: 0.70003164}
+      scale: {x: 1.0000014, y: 1.0000013, z: 1.0000008}
+    - name: VisualSceneNode15
+      parentName: VisualSceneNode14
+      position: {x: -0, y: -0.024950398, z: 0.00000001}
+      rotation: {x: 0.0281963, y: -0.00000011920925, z: -0.00000050081854, w: 0.99960244}
+      scale: {x: 1, y: 1.0000002, z: 1.0000017}
+    - name: VisualSceneNode16
+      parentName: VisualSceneNode15
+      position: {x: 0.00000001, y: -0.0168725, z: -0.00000001}
+      rotation: {x: -0.042462792, y: 0, z: -0, w: 0.99909806}
+      scale: {x: 1, y: 1.0000001, z: 1.0000011}
+    - name: VisualSceneNode17
+      parentName: VisualSceneNode9
+      position: {x: 0.00391213, y: -0.060210597, z: 0.0167048}
+      rotation: {x: 0.007282343, y: -0.7304441, z: 0.13237754, w: 0.66998106}
+      scale: {x: 1.0000011, y: 1.0000014, z: 1.0000007}
+    - name: VisualSceneNode18
+      parentName: VisualSceneNode17
+      position: {x: -0, y: -0.0324285, z: 0.00000002}
+      rotation: {x: 0.027213473, y: -0.000000089406925, z: -0.00000062398584, w: 0.99962974}
+      scale: {x: 1, y: 1.0000007, z: 1.0000013}
+    - name: VisualSceneNode19
+      parentName: VisualSceneNode18
+      position: {x: 0.00000001, y: -0.021602198, z: -0.00000002}
+      rotation: {x: 0.05853082, y: 0, z: -0, w: 0.99828565}
+      scale: {x: 1, y: 1.0000006, z: 1.0000017}
+    - name: VisualSceneNode20
+      parentName: VisualSceneNode9
+      position: {x: 0.0076239696, y: -0.059923097, z: -0.00379251}
+      rotation: {x: 0.010649764, y: -0.74678975, z: 0.13343142, w: 0.65145046}
+      scale: {x: 1.0000015, y: 1.000001, z: 1.0000014}
+    - name: VisualSceneNode21
+      parentName: VisualSceneNode20
+      position: {x: 0.00000001, y: -0.025895901, z: 0}
+      rotation: {x: 0.030040491, y: 0.00000008940694, z: -0.0000010300424, w: 0.99954873}
+      scale: {x: 1, y: 1.0000007, z: 1.0000021}
+    - name: VisualSceneNode22
+      parentName: VisualSceneNode21
+      position: {x: 0.00000001, y: -0.0183717, z: 0.00000001}
+      rotation: {x: 0.111822166, y: 0, z: -0, w: 0.9937282}
+      scale: {x: 1, y: 1.0000014, z: 1.0000014}
+    - name: VisualSceneNode23
+      parentName: VisualSceneNode9
+      position: {x: 0.00970821, y: -0.060384102, z: -0.0190096}
+      rotation: {x: 0.014445686, y: -0.785509, z: 0.1257884, w: 0.60575926}
+      scale: {x: 1.0000002, y: 1.0000015, z: 1.0000007}
+    - name: VisualSceneNode24
+      parentName: VisualSceneNode23
+      position: {x: -0, y: -0.021627098, z: 0.00000002}
+      rotation: {x: 0.03124218, y: -0, z: 0.00000009965146, w: 0.99951184}
+      scale: {x: 1, y: 1.0000008, z: 1.0000017}
+    - name: VisualSceneNode25
+      parentName: VisualSceneNode24
+      position: {x: -0, y: -0.0139641, z: 0.00000003}
+      rotation: {x: 0.18354778, y: 0, z: -0, w: 0.9830108}
+      scale: {x: 1, y: 1.0000006, z: 1.0000019}
+    - name: VisualSceneNode26
+      parentName: VisualSceneNode8
+      position: {x: -0.00000002, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VisualSceneNode27
+      parentName: VisualSceneNode8
+      position: {x: -0.059222296, y: 0.00000002, z: 0.00000001}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VisualSceneNode28
+      parentName: VisualSceneNode5
+      position: {x: 0.0277688, y: -0.022786299, z: -0.0352262}
+      rotation: {x: -0.06816847, y: -0.2525894, z: -0.6121295, w: 0.74622333}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: VisualSceneNode29
+      parentName: VisualSceneNode28
+      position: {x: 0.00000043999998, y: 0.0833479, z: 0.000000049999997}
+      rotation: {x: 0.42157817, y: -0.6160315, z: -0.408755, w: 0.52506804}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000002}
+    - name: VisualSceneNode30
+      parentName: VisualSceneNode29
+      position: {x: -0.13552399, y: 0, z: 0}
+      rotation: {x: 0.00084729475, y: -0.00915098, z: 0.035635836, w: 0.99932265}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: VisualSceneNode31
+      parentName: VisualSceneNode30
+      position: {x: -0.118444, y: 0.00000004, z: 0}
+      rotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VisualSceneNode32
+      parentName: VisualSceneNode31
+      position: {x: -0.0364009, y: 0.0583825, z: -0.00874455}
+      rotation: {x: -0.55811137, y: -0.13831925, z: 0.15567465, w: 0.8032091}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000002}
+    - name: VisualSceneNode33
+      parentName: VisualSceneNode31
+      position: {x: -0.061380398, y: 0.11218199, z: 0.0127344}
+      rotation: {x: -0.55811137, y: -0.13831925, z: 0.15567465, w: 0.8032091}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000002}
+    - name: VisualSceneNode34
+      parentName: VisualSceneNode31
+      position: {x: -0.0762783, y: 0.14426799, z: 0.0255445}
+      rotation: {x: -0.55811137, y: -0.13831925, z: 0.15567465, w: 0.8032091}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000002}
+    - name: VisualSceneNode35
+      parentName: VisualSceneNode31
+      position: {x: -0.0901209, y: 0.174082, z: 0.0374472}
+      rotation: {x: -0.55811137, y: -0.13831925, z: 0.15567465, w: 0.8032091}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000002}
+    - name: VisualSceneNode36
+      parentName: VisualSceneNode31
+      position: {x: -0.026108898, y: 0.022618301, z: -0.0281462}
+      rotation: {x: -0.44296888, y: -0.04832779, z: 0.12962058, w: 0.88579994}
+      scale: {x: 1.0000006, y: 1.0000007, z: 1.0000006}
+    - name: VisualSceneNode37
+      parentName: VisualSceneNode36
+      position: {x: 0.00000031, y: 0.0292664, z: 0}
+      rotation: {x: 0.038062878, y: 0.00000051781507, z: -0.0000027306362, w: 0.9992753}
+      scale: {x: 1, y: 1.0000008, z: 0.99999994}
+    - name: VisualSceneNode38
+      parentName: VisualSceneNode37
+      position: {x: 0.000000109999995, y: 0.0166474, z: 0.00000072}
+      rotation: {x: -0.21958141, y: 0, z: -0, w: 0.9755942}
+      scale: {x: 1, y: 1.000001, z: 1.0000001}
+    - name: VisualSceneNode39
+      parentName: VisualSceneNode31
+      position: {x: -0.0052785496, y: 0.060319196, z: -0.0393911}
+      rotation: {x: 0.0007319147, y: -0.7027745, z: 0.12674463, w: 0.7000309}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000004}
+    - name: VisualSceneNode40
+      parentName: VisualSceneNode39
+      position: {x: -0.00000001, y: 0.0249503, z: -0.00000012}
+      rotation: {x: 0.028200287, y: 0.000003516672, z: 0.000012471741, w: 0.9996023}
+      scale: {x: 1, y: 1.0000008, z: 1.0000008}
+    - name: VisualSceneNode41
+      parentName: VisualSceneNode40
+      position: {x: 0.00000039999998, y: 0.0168724, z: -0.00000016}
+      rotation: {x: -0.042462297, y: 0, z: -0, w: 0.99909806}
+      scale: {x: 1, y: 1, z: 1.0000011}
+    - name: VisualSceneNode42
+      parentName: VisualSceneNode31
+      position: {x: -0.00391171, y: 0.0602103, z: -0.0167051}
+      rotation: {x: 0.0072705704, y: -0.73044693, z: 0.13237101, w: 0.66997945}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000004}
+    - name: VisualSceneNode43
+      parentName: VisualSceneNode42
+      position: {x: -0.00000003, y: 0.0324284, z: 0.00000051}
+      rotation: {x: 0.027239244, y: 0.0000003576276, z: 0.0000025937316, w: 0.999629}
+      scale: {x: 1, y: 1.0000007, z: 1.0000007}
+    - name: VisualSceneNode44
+      parentName: VisualSceneNode43
+      position: {x: 0.000000099999994, y: 0.021602001, z: -0.00000075}
+      rotation: {x: 0.058530815, y: 0, z: -0, w: 0.99828565}
+      scale: {x: 1, y: 1.0000006, z: 1.0000006}
+    - name: VisualSceneNode45
+      parentName: VisualSceneNode31
+      position: {x: -0.00762398, y: 0.0599226, z: 0.00379222}
+      rotation: {x: 0.010651852, y: -0.7467872, z: 0.13343944, w: 0.6514518}
+      scale: {x: 1.0000005, y: 1.0000011, z: 1.000001}
+    - name: VisualSceneNode46
+      parentName: VisualSceneNode45
+      position: {x: 0.00000012, y: 0.025896, z: -0.0000007}
+      rotation: {x: 0.030020189, y: -0.00000041723231, z: -0.0000058207634, w: 0.9995494}
+      scale: {x: 1, y: 0.99999994, z: 1.0000013}
+    - name: VisualSceneNode47
+      parentName: VisualSceneNode46
+      position: {x: -0.00000014999999, y: 0.0183713, z: 0.00000021999999}
+      rotation: {x: 0.111822285, y: 0, z: -0, w: 0.9937282}
+      scale: {x: 1, y: 1.0000004, z: 1.0000004}
+    - name: VisualSceneNode48
+      parentName: VisualSceneNode31
+      position: {x: -0.00970833, y: 0.0603838, z: 0.019009499}
+      rotation: {x: 0.014443119, y: -0.78550893, z: 0.12578976, w: 0.6057591}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000011}
+    - name: VisualSceneNode49
+      parentName: VisualSceneNode48
+      position: {x: -0.00000006, y: 0.021627199, z: -0.00000019999999}
+      rotation: {x: 0.031218432, y: -0.0000011920922, z: -0.0000007646154, w: 0.9995127}
+      scale: {x: 1, y: 1.0000004, z: 1.0000004}
+    - name: VisualSceneNode50
+      parentName: VisualSceneNode49
+      position: {x: -0.00000012999999, y: 0.0139633, z: 0.00000031}
+      rotation: {x: 0.18354781, y: 0, z: -0, w: 0.9830108}
+      scale: {x: 1, y: 1.0000006, z: 1.000001}
+    - name: VisualSceneNode51
+      parentName: VisualSceneNode30
+      position: {x: -0.059222203, y: 0, z: 0.00000002}
+      rotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VisualSceneNode52
+      parentName: VisualSceneNode5
+      position: {x: -0, y: -0.036226798, z: -0.00000003}
+      rotation: {x: -0.12226174, y: 0, z: -0, w: 0.9924979}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
+    - name: VisualSceneNode53
+      parentName: VisualSceneNode52
+      position: {x: -0, y: -0.0334821, z: 0.00000002}
+      rotation: {x: -0.1257093, y: 0, z: -0, w: 0.99206716}
+      scale: {x: 1, y: 0.9999996, z: 0.9999996}
+    - name: VisualSceneNode54
+      parentName: VisualSceneNode5
+      position: {x: 0.0850648, y: -0.0406792, z: -0.052264597}
+      rotation: {x: 0.5784262, y: 0.2344829, z: 0.77684444, w: 0.083388574}
+      scale: {x: 1.0000001, y: 1, z: 1.0000005}
+    - name: VisualSceneNode55
+      parentName: VisualSceneNode5
+      position: {x: 0.0536889, y: -0.0367575, z: -0.027697401}
+      rotation: {x: 0.24354164, y: 0.45884207, z: 0.5968031, w: 0.611537}
+      scale: {x: 1.0000002, y: 0.9999998, z: 1.0000004}
+    - name: VisualSceneNode56
+      parentName: VisualSceneNode5
+      position: {x: -0.0536889, y: -0.036745097, z: -0.027684998}
+      rotation: {x: 0.59680307, y: 0.61153704, z: 0.24354166, w: 0.4588421}
+      scale: {x: 1.0000002, y: 0.9999998, z: 1.0000004}
+    - name: VisualSceneNode57
+      parentName: VisualSceneNode5
+      position: {x: -0.0859374, y: -0.0396024, z: -0.050171}
+      rotation: {x: 0.7775329, y: 0.0850949, z: 0.57817763, w: 0.23218974}
+      scale: {x: 1.0000001, y: 0.9999995, z: 0.9999995}
+    - name: VisualSceneNode58
+      parentName: VisualSceneNode5
+      position: {x: -0, y: -0.0384418, z: 0.0378786}
+      rotation: {x: 0.44918898, y: 0.5461037, z: 0.44918898, w: 0.5461037}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: VisualSceneNode59
+      parentName: VisualSceneNode5
+      position: {x: -0.011344, y: -0.0264891, z: -0.0879045}
+      rotation: {x: 0.9290114, y: -0.022394586, z: -0.051822964, w: 0.36571944}
+      scale: {x: 1.0000002, y: 1.0000002, z: 0.9999998}
+    - name: VisualSceneNode60
+      parentName: VisualSceneNode4
+      position: {x: 0.084271, y: -0.0406083, z: -0.0803246}
+      rotation: {x: 0.5802384, y: 0.109759726, z: 0.807011, w: -0.0030672431}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999964}
+    - name: VisualSceneNode61
+      parentName: VisualSceneNode4
+      position: {x: -0.0841249, y: -0.0410207, z: -0.080353096}
+      rotation: {x: 0.8066516, y: -0.0049453196, z: 0.58022547, w: 0.11237124}
+      scale: {x: 1.0000001, y: 1.0000004, z: 0.99999976}
+    - name: VisualSceneNode62
+      parentName: VisualSceneNode3
+      position: {x: 0.0754203, y: -0.0373743, z: -0.0921751}
+      rotation: {x: 0.5783874, y: 0.00095224305, z: 0.81486046, w: -0.03833574}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: VisualSceneNode63
+      parentName: VisualSceneNode3
+      position: {x: -0.08174989, y: -0.0363892, z: -0.0901128}
+      rotation: {x: 0.8148603, y: -0.038438756, z: 0.5783805, w: 0.001097417}
+      scale: {x: 1, y: 0.9999995, z: 1}
+    - name: VisualSceneNode64
+      parentName: VisualSceneNode2
+      position: {x: 0.0000037099999, y: 0.00492124, z: -0.0961919}
+      rotation: {x: -0.6929631, y: 0.6947594, z: 0.1316012, w: 0.14068656}
+      scale: {x: 0.9999998, y: 0.99999976, z: 1.0000004}
+    - name: VisualSceneNode65
+      parentName: VisualSceneNode1
+      position: {x: -0.067319095, y: 0.0330554, z: -0.00598948}
+      rotation: {x: 0.7274315, y: -0.67860234, z: -0.08325824, w: 0.05839823}
+      scale: {x: 1.0000002, y: 0.9999998, z: 0.9999996}
+    - name: VisualSceneNode66
+      parentName: VisualSceneNode65
+      position: {x: -0.19139099, y: -0.00000001, z: 0}
+      rotation: {x: 0, y: -0.15772471, z: -0, w: 0.98748314}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: VisualSceneNode67
+      parentName: VisualSceneNode66
+      position: {x: -0.19653998, y: -0.00000002, z: -0.00000001}
+      rotation: {x: -0.37937015, y: 0.34313914, z: -0.59630996, w: 0.6186665}
+      scale: {x: 0.9999995, y: 0.99999994, z: 1.0000004}
+    - name: VisualSceneNode68
+      parentName: VisualSceneNode67
+      position: {x: -0, y: -0.0645673, z: 0.00000002}
+      rotation: {x: -0.3499789, y: 0, z: -0, w: 0.9367576}
+      scale: {x: 1, y: 1.0000005, z: 1.0000005}
+    - name: VisualSceneNode69
+      parentName: VisualSceneNode1
+      position: {x: 0.067319095, y: 0.033055, z: -0.00598954}
+      rotation: {x: -0.53871703, y: 0.55566543, z: 0.4730782, w: -0.42097148}
+      scale: {x: 0.99999934, y: 0.9999996, z: 0.9999998}
+    - name: VisualSceneNode70
+      parentName: VisualSceneNode69
+      position: {x: -0.191392, y: 0.00000003, z: 0.00000003}
+      rotation: {x: 0.69825596, y: -0.11152864, z: -0.11152864, w: 0.69825596}
+      scale: {x: 0.9999995, y: 1, z: 0.9999992}
+    - name: VisualSceneNode71
+      parentName: VisualSceneNode70
+      position: {x: -0.196539, y: 0.00000004, z: -0.00000004}
+      rotation: {x: -0.59630984, y: 0.61866635, z: 0.3793704, w: -0.34313938}
+      scale: {x: 0.9999995, y: 0.99999905, z: 1}
+    - name: VisualSceneNode72
+      parentName: VisualSceneNode71
+      position: {x: -0.00000001, y: 0.0645672, z: -0.000000049999997}
+      rotation: {x: -0.349979, y: 0, z: -0, w: 0.93675756}
+      scale: {x: 1, y: 0.99999976, z: 0.9999991}
+    - name: VisualSceneNode73
+      parentName: VisualSceneNode1
+      position: {x: 0.0000037099999, y: 0.010744801, z: -0.066309296}
+      rotation: {x: -0.70649385, y: 0.7075919, z: 0.0037047917, w: 0.012900923}
+      scale: {x: 0.99999994, y: 0.99999976, z: 1.0000002}
+    - name: VisualSceneNode74
+      parentName: VisualSceneNode1
+      position: {x: 0.0853073, y: -0.00244536, z: -0.019080099}
+      rotation: {x: 0.03051574, y: 0.09063005, z: -0.7494556, w: 0.6551117}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
+    - name: VisualSceneNode75
+      parentName: VisualSceneNode1
+      position: {x: -0.057896998, y: -0.022552699, z: 0.0575047}
+      rotation: {x: -0.1580596, y: 0.016437447, z: 0.987272, w: 0.00640404}
+      scale: {x: 0.99999964, y: 0.9999994, z: 1}
+    - name: VisualSceneNode76
+      parentName: Man(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VisualSceneNode77
+      parentName: Man(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VisualSceneNode78
+      parentName: Man(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VisualSceneNode79
+      parentName: Man(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 0
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
