@@ -1,0 +1,4 @@
+public enum EventCode : byte
+{
+
+}

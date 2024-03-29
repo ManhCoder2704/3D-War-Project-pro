@@ -6,58 +6,50 @@ public class CameraManager : Singleton<CameraManager>
 {
     [Header("Virtual Camera Manager")]
     [SerializeField] private CinemachineBrain _cinemachineBrain;
-    [SerializeField] private CinemachineVirtualCamera _leaderCamera;
-    [SerializeField] private CinemachineVirtualCamera _sniperCamera;
-    [SerializeField] private CinemachineVirtualCamera _carrierCamera;
+    [SerializeField] private CinemachineVirtualCamera _centerCamera;
     [SerializeField] private int _activeCameraPriority = 20;
     [SerializeField] private float _transitionTime = 2f;
     [SerializeField] private CinemachineBlendDefinition.Style _blendStyle = CinemachineBlendDefinition.Style.EaseInOut;
+    private CinemachineVirtualCamera _leaderCamera;
+    private CinemachineVirtualCamera _sniperCamera;
+    private CinemachineVirtualCamera _carrierCamera;
 
-    public Action<CameraType> OnCameraChange;
+    public Action<CharacterType> OnCameraChange;
     private CinemachineVirtualCamera _activeCamera;
-    private CameraType _activeCameraType;
+    private CharacterType _activeCameraType;
 
     private void Start()
     {
         Init();
-        ChangeCamera(CameraType.Leader);
     }
 
     private void Init()
     {
         _cinemachineBrain.m_CameraActivatedEvent.AddListener(OnCameraActived);
         _cinemachineBrain.m_DefaultBlend = new CinemachineBlendDefinition(_blendStyle, _transitionTime);
+        _activeCamera = _centerCamera;
     }
 
-    private void Update()
+    internal void SetupCamera(GameObject leader, GameObject sniper, GameObject carrier)
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            ChangeCamera(CameraType.Leader);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            ChangeCamera(CameraType.Sniper);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            ChangeCamera(CameraType.Carrier);
-        }
+        _leaderCamera = leader.GetComponentInChildren<CinemachineVirtualCamera>();
+        _sniperCamera = sniper.GetComponentInChildren<CinemachineVirtualCamera>();
+        _carrierCamera = carrier.GetComponentInChildren<CinemachineVirtualCamera>();
     }
 
-    private void ChangeCamera(CameraType cameraType)
+    internal void ChangeCamera(CharacterType cameraType)
     {
         CinemachineVirtualCamera camera;
 
         switch (cameraType)
         {
-            case CameraType.Leader:
+            case CharacterType.Leader:
                 camera = _leaderCamera;
                 break;
-            case CameraType.Sniper:
+            case CharacterType.Sniper:
                 camera = _sniperCamera;
                 break;
-            case CameraType.Carrier:
+            case CharacterType.Carrier:
                 camera = _carrierCamera;
                 break;
             default:
@@ -73,12 +65,12 @@ public class CameraManager : Singleton<CameraManager>
         _activeCamera.Priority = _activeCameraPriority;
     }
 
-    public CinemachineVirtualCamera GetActiveCamera()
+    internal CinemachineVirtualCamera GetActiveCamera()
     {
         return _activeCamera;
     }
 
-    public void ChangeCurrentCameraProperty(float fieldOfView, float orthographicSize, float orthographicNearClipPlane, float orthographicFarClipPlane)
+    internal void ChangeCurrentCameraProperty(float fieldOfView, float orthographicSize, float orthographicNearClipPlane, float orthographicFarClipPlane)
     {
         if (_activeCamera == null) return;
 
@@ -94,7 +86,7 @@ public class CameraManager : Singleton<CameraManager>
         }
     }
 
-    public void ChangeCinemachineProperty(CinemachineBlendDefinition.Style blendStyle, float transitionTime)
+    internal void ChangeCinemachineProperty(CinemachineBlendDefinition.Style blendStyle, float transitionTime)
     {
         _cinemachineBrain.m_DefaultBlend = new CinemachineBlendDefinition(blendStyle, transitionTime);
     }
