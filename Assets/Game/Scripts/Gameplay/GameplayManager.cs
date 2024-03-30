@@ -18,6 +18,9 @@ public class GameplayManager : Singleton<GameplayManager>
         {
             switch (gameState)
             {
+                case GameState.MapGenerator:
+                    state = new MapGeneratorState();
+                    break;
                 case GameState.Prepare:
                     state = new PrepareState();
                     break;
@@ -39,7 +42,7 @@ public class GameplayManager : Singleton<GameplayManager>
 
     private void Start()
     {
-        ChangeState(GameState.Prepare);
+        ChangeState(GameState.MapGenerator);
     }
 
     private void Update()
