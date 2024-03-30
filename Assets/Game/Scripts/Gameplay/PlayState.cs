@@ -4,7 +4,8 @@ public class PlayState : IState
 {
     public void OnEnter()
     {
-
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void OnExecute()
