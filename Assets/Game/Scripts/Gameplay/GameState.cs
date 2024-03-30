@@ -1,6 +1,7 @@
 public enum GameState : byte
 {
     None = 0,
-    Prepare = 1,
-    Play = 2,
+    MapGenerator = 1,
+    Prepare = 2,
+    Play = 3,
 }
