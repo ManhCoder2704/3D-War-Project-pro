@@ -17,7 +17,7 @@ public class PrepareState : IState
         }
         else
         {
-            GameplayManager.Instance.ChangeState(GameState.Play);
+            GameplayManager.Instance.ChangeState(GameState.Leader);
         }
     }
 

@@ -24,8 +24,14 @@ public class GameplayManager : Singleton<GameplayManager>
                 case GameState.Prepare:
                     state = new PrepareState();
                     break;
-                case GameState.Play:
-                    state = new PlayState();
+                case GameState.Leader:
+                    state = new LeaderState();
+                    break;
+                case GameState.Sniper:
+                    state = new SniperState();
+                    break;
+                case GameState.Carrier:
+                    state = new CarrierState();
                     break;
             }
             _states.Add(gameState, state);
