@@ -10,18 +10,23 @@ public class SpawnManager : Singleton<SpawnManager>
     [Header("Map Generator")]
     [SerializeField] private Transform _mapContainer;
     [SerializeField] private GameObject _tilePrefab;
-    [SerializeField] private float _tileSize = 2f;
-    [SerializeField] private int _mapWidth = 32;
-    [SerializeField] private int _mapHeight = 48;
+    [SerializeField] private float _tileSize = 4f;
+    [SerializeField] private int _mapWidth = 16;
+    [SerializeField] private int _mapHeight = 24;
 
-    private List<GameObject> _tiles = new List<GameObject>();
+    internal List<GameObject> _tiles = new List<GameObject>();
+    public GameObject leader;
+    public GameObject sniper;
+    public GameObject carrior;
+    public GameObject trencher;
+
 
     internal void SpawnCharacter()
     {
-        GameObject leader = Instantiate(Resources.Load("Models/Leader"), _blueSpawnPoints[(int)CharacterType.Leader - 1].position, Quaternion.identity) as GameObject;
-        GameObject sniper = Instantiate(Resources.Load("Models/Sniper"), _blueSpawnPoints[(int)CharacterType.Sniper - 1].position, Quaternion.identity) as GameObject;
-        GameObject carrior = Instantiate(Resources.Load("Models/Carrier"), _blueSpawnPoints[(int)CharacterType.Carrier - 1].position, Quaternion.identity) as GameObject;
-        GameObject trencher = Instantiate(Resources.Load("Models/Trencher"), _blueSpawnPoints[(int)CharacterType.Trencher - 1].position, Quaternion.identity) as GameObject;
+        leader = Instantiate(Resources.Load("Models/Leader"), _blueSpawnPoints[(int)CharacterType.Leader - 1].position, Quaternion.identity) as GameObject;
+        sniper = Instantiate(Resources.Load("Models/Sniper"), _blueSpawnPoints[(int)CharacterType.Sniper - 1].position, Quaternion.identity) as GameObject;
+        carrior = Instantiate(Resources.Load("Models/Carrier"), _blueSpawnPoints[(int)CharacterType.Carrier - 1].position, Quaternion.identity) as GameObject;
+        trencher = Instantiate(Resources.Load("Models/Trencher"), _blueSpawnPoints[(int)CharacterType.Trencher - 1].position, Quaternion.identity) as GameObject;
         CameraManager.Instance.SetupCamera(leader, sniper, carrior);
     }
 
