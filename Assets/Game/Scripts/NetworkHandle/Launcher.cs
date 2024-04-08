@@ -33,7 +33,7 @@ public class Launcher : PhotonSingleton<Launcher>
     public void ConnectToMasterServer()
     {
         Debug.Log("Connecting to Master");
-        PhotonNetwork.ConnectUsingSettings(_appSettings);
+        PhotonNetwork.ConnectUsingSettings();
     }
 
     public override void OnConnectedToMaster()
@@ -51,15 +51,8 @@ public class Launcher : PhotonSingleton<Launcher>
             return;
         }
         Debug.Log("Joined Lobby");
-        if (PlayerPrefs.HasKey("PlayerName"))
-        {
-            PhotonNetwork.NickName = PlayerPrefs.GetString("PlayerName");
-            //UIManager.Instance.OpenUI(UIType.Menu);
-        }
-        else
-        {
-            //UIManager.Instance.OpenUI(UIType.Profile);
-        }
+        PhotonNetwork.NickName = GetPlayerName();
+        Lobby.UIManager.Instance.OpenUI(UIType.Menu);
     }
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
@@ -87,7 +80,7 @@ public class Launcher : PhotonSingleton<Launcher>
     public override void OnJoinedRoom()
     {
         Debug.Log("Joined Room");
-        //UIManager.Instance.OpenUI(UIType.Room);
+        Lobby.UIManager.Instance.OpenUI(UIType.Room);
         PhotonNetwork.AutomaticallySyncScene = true;
     }
 
@@ -131,7 +124,7 @@ public class Launcher : PhotonSingleton<Launcher>
         _isReconnecting = true;
         PhotonNetwork.AutomaticallySyncScene = false;
         Debug.Log("Left Room");
-        //UIManager.Instance.OpenUI(UIType.Menu);
+        Lobby.UIManager.Instance.OpenUI(UIType.Menu);
     }
 
     public void StartGame()
@@ -143,6 +136,21 @@ public class Launcher : PhotonSingleton<Launcher>
     {
         Debug.Log("Disconnected");
         ConnectToMasterServer();
+    }
+
+    public string GetPlayerName()
+    {
+        if (PlayerPrefs.HasKey("PlayerName"))
+        {
+            return PlayerPrefs.GetString("PlayerName");
+            //UIManager.Instance.OpenUI(UIType.Menu);
+        }
+        else
+        {
+            string playerName = UnityEngine.SystemInfo.deviceUniqueIdentifier;
+            PlayerPrefs.SetString("PlayerName", playerName);
+            return playerName;
+        }
     }
 }
 
