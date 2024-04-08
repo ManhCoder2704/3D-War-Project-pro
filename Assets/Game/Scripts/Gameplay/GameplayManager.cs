@@ -18,11 +18,20 @@ public class GameplayManager : Singleton<GameplayManager>
         {
             switch (gameState)
             {
+                case GameState.MapGenerator:
+                    state = new MapGeneratorState();
+                    break;
                 case GameState.Prepare:
                     state = new PrepareState();
                     break;
-                case GameState.Play:
-                    state = new PlayState();
+                case GameState.Leader:
+                    state = new LeaderState();
+                    break;
+                case GameState.Sniper:
+                    state = new SniperState();
+                    break;
+                case GameState.Carrier:
+                    state = new CarrierState();
                     break;
             }
             _states.Add(gameState, state);
@@ -39,7 +48,7 @@ public class GameplayManager : Singleton<GameplayManager>
 
     private void Start()
     {
-        ChangeState(GameState.Prepare);
+        ChangeState(GameState.MapGenerator);
     }
 
     private void Update()
