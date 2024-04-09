@@ -17,7 +17,7 @@ namespace Lobby
         private void OnEnable()
         {
             _roomID.text = PhotonNetwork.CurrentRoom.Name;
-            _startButton.interactable = (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount == 2);
+            //_startButton.interactable = (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount == 2);
         }
 
         private void Start()
@@ -30,7 +30,7 @@ namespace Lobby
 
         private void OnStart()
         {
-            //GameManager.Instance.StartGame();
+            Launcher.Instance.StartGame();
         }
 
         private void OnLeave()
@@ -40,7 +40,7 @@ namespace Lobby
 
         private void OnPlayerCountChange(Photon.Realtime.Player enemyInfo, int playerCount, bool isJoin)
         {
-            _startButton.interactable = (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount == 2);
+            //_startButton.interactable = (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount == 2);
         }
 
         private void OnDisable()
