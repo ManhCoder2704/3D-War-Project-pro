@@ -93,7 +93,7 @@ public class CameraManager : Singleton<CameraManager>
 
     private void OnCameraActived(ICinemachineCamera newCamera, ICinemachineCamera oldCamera)
     {
-        Debug.Log($"Camera changed from {oldCamera.Name} to {newCamera.Name}");
+        Debug.Log($"Camera changed from {oldCamera?.Name} to {newCamera?.Name}");
         OnCameraChange?.Invoke(_activeCameraType);
     }
 }
