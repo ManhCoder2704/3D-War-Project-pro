@@ -29733,7 +29733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fed06643462a4e4083e2baa0dc3a57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_isDestroyOnLoad: 1
+  m_isDestroyOnLoad: 0
   _appSettings:
     AppIdRealtime: 
     AppIdFusion: 
@@ -79261,4 +79261,3 @@ SceneRoots:
   - {fileID: 915334908}
   - {fileID: 710352323}
   - {fileID: 817947743}
-  - {fileID: 437718616}
