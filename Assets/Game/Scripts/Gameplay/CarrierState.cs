@@ -23,6 +23,5 @@ public class CarrierState : IState
 
     public void OnExit()
     {
-        throw new System.NotImplementedException();
     }
 }

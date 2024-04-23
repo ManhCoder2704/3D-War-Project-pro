@@ -37,7 +37,7 @@ public class SpawnManager : Singleton<SpawnManager>
 
     private IEnumerator MapGeneratorCO(Action onComplete)
     {
-        for (int z = 0; z < _mapHeight; z++)
+        for (int z = 1; z < _mapHeight - 1; z++)
         {
             for (int x = 0; x < _mapWidth; x++)
             {

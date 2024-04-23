@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
                 transform.LookAt(transform.position + moveDirection);
             }
             ChangeAnim(Anim.Run);
-            _player.AddForce(moveDirection * speed);
+            _player.AddForce(moveDirection * speed * Time.fixedDeltaTime);
         }
         else
         {

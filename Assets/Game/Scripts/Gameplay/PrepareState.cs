@@ -5,7 +5,7 @@ public class PrepareState : IState
     private float _timer;
     public void OnEnter()
     {
-        _timer = 5f;
+        _timer = 3f;
     }
 
     public void OnExecute()
