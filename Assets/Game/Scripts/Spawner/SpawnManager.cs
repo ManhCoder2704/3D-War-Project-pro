@@ -9,17 +9,20 @@ public class SpawnManager : Singleton<SpawnManager>
     [SerializeField] private List<Transform> _redSpawnPoint;
     [Header("Map Generator")]
     [SerializeField] private Transform _mapContainer;
-    [SerializeField] private GameObject _tilePrefab;
+    [SerializeField] private Tile _tilePrefab;
     [SerializeField] private float _tileSize = 4f;
     [SerializeField] private int _mapWidth = 16;
     [SerializeField] private int _mapHeight = 24;
 
-    internal List<GameObject> _tiles = new List<GameObject>();
+    private List<Tile> allyTiles = new List<Tile>();
+    private List<Tile> enemyTiles = new List<Tile>();
     public GameObject leader;
     public GameObject sniper;
     public GameObject carrior;
     public GameObject trencher;
 
+    internal List<Tile> AllyTiles { get => allyTiles; set => allyTiles = value; }
+    internal List<Tile> EnemyTiles { get => enemyTiles; set => enemyTiles = value; }
 
     internal void SpawnCharacter()
     {
@@ -41,8 +44,16 @@ public class SpawnManager : Singleton<SpawnManager>
         {
             for (int x = 0; x < _mapWidth; x++)
             {
-                GameObject tile = Instantiate(_tilePrefab, _mapContainer);
-                _tiles.Add(tile);
+                Tile tile = Instantiate(_tilePrefab, _mapContainer);
+                if (z < _mapHeight / 2)
+                {
+                    AllyTiles.Add(tile);
+                }
+                else
+                {
+                    EnemyTiles.Add(tile);
+                }
+
                 tile.name = $"Tile_{x}_{z}";
                 tile.transform.localPosition = new Vector3(x * _tileSize, 0, z * _tileSize);
                 Debug.Log($"Generating Tile {x}_{z}");

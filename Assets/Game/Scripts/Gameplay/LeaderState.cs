@@ -1,11 +1,12 @@
+using Lobby;
 using UnityEngine;
 
 public class LeaderState : IState
 {
     public void OnEnter()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
         CameraManager.Instance.ChangeCamera(CharacterType.Leader);
     }
 
@@ -18,6 +19,11 @@ public class LeaderState : IState
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             GameplayManager.Instance.ChangeState(GameState.Carrier);
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            UIManager.Instance.OpenUI(UIType.LeaderUI);
+
         }
     }
 

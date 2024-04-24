@@ -19,10 +19,7 @@ namespace Lobby
             {
                 return _uiDict[uiType];
             }
-            UIBase ui = Instantiate(_uiSO.GetUI(uiType));
-            if (ui == null) return null;
-
-            ui.transform.SetParent(_uiContainer);
+            UIBase ui = Instantiate(_uiSO.GetUI(uiType), _uiContainer);
             ui.transform.localPosition = Vector3.zero;
             _uiDict.Add(uiType, ui);
 

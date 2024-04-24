@@ -7,7 +7,13 @@ using UnityEngine.UI;
 public class ButtonBlock : MonoBehaviour
 {
     [SerializeField] private Button _btn;
-    [SerializeField] private Image _thrownIcon;
+    [SerializeField] private GameObject _Icon;
+    [SerializeField] private Image _btnImage;
+    [SerializeField] private Color _enemyColor;
+    [SerializeField] private Color _allyColor;
+
+    private Tile _linkedTile;
+    private bool _status;
     void Start()
     {
         _btn.onClick.AddListener(ThrowBomb);
@@ -15,12 +21,27 @@ public class ButtonBlock : MonoBehaviour
 
     private void ThrowBomb()
     {
-        throw new NotImplementedException();
-    }
 
-    // Update is called once per frame
-    void Update()
+    }
+    public void OnInit(Tile tile, bool isEnemyBlock)
     {
+        this._linkedTile = tile;
+        if (isEnemyBlock)
+        {
+            _btnImage.color = _enemyColor;
+        }
+        else
+        {
+            _btnImage.color = _allyColor;
+        }
+        TurnOnOffIcon(_status);
 
     }
+    public void TurnOnOffIcon(bool status)
+    {
+        this._status = !_status;
+        _Icon.SetActive(status);
+    }
+
+
 }

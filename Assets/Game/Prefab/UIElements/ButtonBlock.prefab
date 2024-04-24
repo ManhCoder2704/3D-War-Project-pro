@@ -134,6 +134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a9a9292a1ab2da42a14b9964b40875b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _btn: {fileID: 2568212784464052644}
+  _Icon: {fileID: 7597231728831765130}
+  _btnImage: {fileID: 8455294667710829533}
+  _enemyColor: {r: 1, g: 0, b: 0, a: 1}
+  _allyColor: {r: 0.06170094, g: 1, b: 0, a: 1}
 --- !u!1 &7597231728831765130
 GameObject:
   m_ObjectHideFlags: 0
