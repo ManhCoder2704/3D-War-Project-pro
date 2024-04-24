@@ -414,7 +414,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_StartCorner: 0
+  m_StartCorner: 1
   m_StartAxis: 0
   m_CellSize: {x: 50, y: 50}
   m_Spacing: {x: 10, y: 10}
@@ -484,6 +484,7 @@ MonoBehaviour:
   _blockContainer: {fileID: 1600445359321034562}
   _btnBlockPrefab: {fileID: 8194974665005841862, guid: a9a8155f30c98ce44a3a819985a17561,
     type: 3}
+  _enemyList: []
 --- !u!225 &7970105659759557084
 CanvasGroup:
   m_ObjectHideFlags: 0

@@ -21,7 +21,9 @@ public class ButtonBlock : MonoBehaviour
 
     private void ThrowBomb()
     {
-
+        _linkedTile.OffBlock();
+        TurnOnOffIcon(true);
+        this._btn.interactable = false;
     }
     public void OnInit(Tile tile, bool isEnemyBlock)
     {
