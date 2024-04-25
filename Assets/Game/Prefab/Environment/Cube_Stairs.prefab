@@ -12,17 +12,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_Stairs
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f6e708306af82b346bb455fc82f6919e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6e708306af82b346bb455fc82f6919e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.623
+      value: -21.183676
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6e708306af82b346bb455fc82f6919e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1496131
+      value: -3.1613293
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6e708306af82b346bb455fc82f6919e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -92.95146
+      value: -92.93974
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6e708306af82b346bb455fc82f6919e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6e708306af82b346bb455fc82f6919e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6e708306af82b346bb455fc82f6919e, type: 3}
       propertyPath: m_LocalRotation.y
@@ -38,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6e708306af82b346bb455fc82f6919e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6e708306af82b346bb455fc82f6919e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
