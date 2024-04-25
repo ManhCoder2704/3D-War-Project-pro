@@ -1499,6 +1499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6548117741122044601}
+  - component: {fileID: 8881843949028274459}
   m_Layer: 0
   m_Name: Sniper
   m_TagString: Untagged
@@ -1523,6 +1524,20 @@ Transform:
   - {fileID: 1765202221992432085}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8881843949028274459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4023926793981298425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d28082b2033524a86b5aedcd6f837b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_isDestroyOnLoad: 1
+  _bullet: {fileID: 6639827280504838711, guid: 1d638c44412d13044a549cf0f0cce985, type: 3}
 --- !u!1 &4060522326563056486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,8 +1905,8 @@ MonoBehaviour:
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
     m_InvertInput: 0
-    m_MinValue: -25
-    m_MaxValue: 25
+    m_MinValue: -40
+    m_MaxValue: 40
     m_Wrap: 0
     m_Recentering:
       m_enabled: 0

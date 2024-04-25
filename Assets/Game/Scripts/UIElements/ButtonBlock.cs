@@ -21,6 +21,7 @@ public class ButtonBlock : MonoBehaviour
         _btn.onClick.AddListener(ThrowBombandDig);
     }
 
+
     private void ThrowBombandDig()
     {
         TurnOnOffIcon(true);

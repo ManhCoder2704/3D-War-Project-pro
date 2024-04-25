@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class GameplayManager : Singleton<GameplayManager>
 {
+
     private GameState _currentState = GameState.None;
 
     private Dictionary<GameState, IState> _states = new Dictionary<GameState, IState>();

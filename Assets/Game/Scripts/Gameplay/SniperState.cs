@@ -32,8 +32,10 @@ public class SniperState : IState
         if (_isShooting)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
+                Sniper.Instance.Shoot(Camera.main.transform, hit.transform);
                 Debug.Log($"<color=green>Sniper Shot at {hit.collider.gameObject.name}</color>");
             }
         }
@@ -49,6 +51,7 @@ public class SniperState : IState
     public void OnExit()
     {
         GameplayManager.Instance.MouseVisible(true);
+        Gameplay.UIManager.Instance.CloseUI();
     }
 
 }
