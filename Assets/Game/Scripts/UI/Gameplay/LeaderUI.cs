@@ -9,6 +9,7 @@ public class LeaderUI : UIBase
     [SerializeField] private ButtonBlock _btnBlockPrefab;
     [SerializeField] private Button _nextBtn;
     [SerializeField] private Button _previousBtn;
+    [SerializeField] private GridLayoutGroup _gridLayoutGroup;
     private List<Tile> _enemyList;
     private List<Tile> _allyList;
     private List<ButtonBlock> tempList = new List<ButtonBlock>();
@@ -24,7 +25,7 @@ public class LeaderUI : UIBase
     }
     private void SpawnEnemyButton()
     {
-        for (int i = _enemyList.Count - 1; i >= 0; i--)
+        for (int i = 0; i < _enemyList.Count; i++)
         {
             ButtonBlock temp = Instantiate(_btnBlockPrefab, _blockContainer);
             temp.OnInit(_enemyList[i], true);
@@ -39,17 +40,17 @@ public class LeaderUI : UIBase
         }
         _previousBtn.interactable = true;
         _nextBtn.interactable = false;
-
-
+        _gridLayoutGroup.startCorner = GridLayoutGroup.Corner.LowerLeft;
     }
     private void ChangeToEnemy()
     {
-        for (int i = _enemyList.Count - 1; i >= 0; i--)
+        for (int i = 0; i < _enemyList.Count; i++)
         {
             tempList[i].OnInit(_enemyList[i], true);
         }
         _previousBtn.interactable = false;
         _nextBtn.interactable = true;
+        _gridLayoutGroup.startCorner = GridLayoutGroup.Corner.UpperRight;
 
     }
 }

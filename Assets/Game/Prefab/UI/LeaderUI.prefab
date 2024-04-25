@@ -484,7 +484,9 @@ MonoBehaviour:
   _blockContainer: {fileID: 1600445359321034562}
   _btnBlockPrefab: {fileID: 8194974665005841862, guid: a9a8155f30c98ce44a3a819985a17561,
     type: 3}
-  _enemyList: []
+  _nextBtn: {fileID: 279519812057624311}
+  _previousBtn: {fileID: 8073078110410177221}
+  _gridLayoutGroup: {fileID: 897959610362803839}
 --- !u!225 &7970105659759557084
 CanvasGroup:
   m_ObjectHideFlags: 0

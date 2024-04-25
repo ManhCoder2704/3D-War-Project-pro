@@ -13,35 +13,54 @@ public class ButtonBlock : MonoBehaviour
     [SerializeField] private Color _allyColor;
 
     private Tile _linkedTile;
-    private bool _status;
+    private bool _isDigged;
+    private bool _isThrown;
+    private bool _isEnemy;
     void Start()
     {
-        _btn.onClick.AddListener(ThrowBomb);
+        _btn.onClick.AddListener(ThrowBombandDig);
     }
 
-    private void ThrowBomb()
+    private void ThrowBombandDig()
     {
-        _linkedTile.OffBlock();
         TurnOnOffIcon(true);
         this._btn.interactable = false;
+        if (_isEnemy)
+        {
+            if (_linkedTile.IsDigged)
+            {
+                _linkedTile.OnOffBlock(true);
+                _linkedTile.IsThrownBomb = !_isThrown;
+            }
+        }
+        else
+        {
+            _linkedTile.IsDigged = !_isDigged;
+            _linkedTile.OnOffBlock(false);
+        }
     }
     public void OnInit(Tile tile, bool isEnemyBlock)
     {
         this._linkedTile = tile;
+        this._isDigged = tile.IsDigged;
+        this._isThrown = tile.IsThrownBomb;
+        this._isEnemy = isEnemyBlock;
         if (isEnemyBlock)
         {
             _btnImage.color = _enemyColor;
+            TurnOnOffIcon(_isThrown);
+            this._btn.interactable = !_isThrown;
         }
         else
         {
             _btnImage.color = _allyColor;
-        }
-        TurnOnOffIcon(_status);
+            TurnOnOffIcon(_isDigged);
+            this._btn.interactable = !_isDigged;
 
+        }
     }
     public void TurnOnOffIcon(bool status)
     {
-        this._status = !_status;
         _Icon.SetActive(status);
     }
 

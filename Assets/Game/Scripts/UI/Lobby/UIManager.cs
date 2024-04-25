@@ -29,9 +29,7 @@ namespace Lobby
         public void OpenUI(UIType uIType)
         {
             UIBase ui = GetUI(uIType);
-
             if (ui == null || ui == _currentUI) return;
-
             if (ui.IsPopup)
             {
                 if (_currentPopup != null)
