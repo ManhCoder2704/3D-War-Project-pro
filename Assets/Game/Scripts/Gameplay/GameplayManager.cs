@@ -55,4 +55,10 @@ public class GameplayManager : Singleton<GameplayManager>
     {
         _currentStateInstance?.OnExecute();
     }
+
+    public void MouseVisible(bool status)
+    {
+        Cursor.lockState = status ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = status;
+    }
 }
