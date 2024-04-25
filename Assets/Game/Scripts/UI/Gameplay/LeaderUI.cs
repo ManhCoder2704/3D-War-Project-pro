@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class LeaderUI : UIBase
     [SerializeField] private ButtonBlock _btnBlockPrefab;
     [SerializeField] private Button _nextBtn;
     [SerializeField] private Button _previousBtn;
+    [SerializeField] private Button _escapeBtn;
     [SerializeField] private GridLayoutGroup _gridLayoutGroup;
     private List<Tile> _enemyList;
     private List<Tile> _allyList;
@@ -19,10 +21,17 @@ public class LeaderUI : UIBase
         _previousBtn.interactable = false;
         _nextBtn.onClick.AddListener(ChangeToAlly);
         _previousBtn.onClick.AddListener(ChangeToEnemy);
+        _escapeBtn.onClick.AddListener(CloseUI);
         _enemyList = SpawnManager.Instance.EnemyTiles;
         _allyList = SpawnManager.Instance.AllyTiles;
         SpawnEnemyButton();
     }
+
+    private void CloseUI()
+    {
+        this.gameObject.SetActive(false);
+    }
+
     private void SpawnEnemyButton()
     {
         for (int i = 0; i < _enemyList.Count; i++)
@@ -32,6 +41,7 @@ public class LeaderUI : UIBase
             tempList.Add(temp);
         }
     }
+
     private void ChangeToAlly()
     {
         for (int i = 0; i < tempList.Count; i++)

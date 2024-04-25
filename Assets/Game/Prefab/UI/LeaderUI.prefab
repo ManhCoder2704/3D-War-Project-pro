@@ -486,6 +486,7 @@ MonoBehaviour:
     type: 3}
   _nextBtn: {fileID: 279519812057624311}
   _previousBtn: {fileID: 8073078110410177221}
+  _escapeBtn: {fileID: 4813456744607108563}
   _gridLayoutGroup: {fileID: 897959610362803839}
 --- !u!225 &7970105659759557084
 CanvasGroup:

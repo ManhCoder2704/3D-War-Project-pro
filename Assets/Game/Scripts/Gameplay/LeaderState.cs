@@ -23,12 +23,10 @@ public class LeaderState : IState
         else if (Input.GetKeyDown(KeyCode.E))
         {
             Gameplay.UIManager.Instance.OpenUI(UIType.LeaderUI);
-
         }
     }
 
     public void OnExit()
     {
-
     }
 }

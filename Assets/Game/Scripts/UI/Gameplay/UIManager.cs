@@ -51,6 +51,10 @@ namespace Gameplay
                 _currentUI = ui;
             }
         }
+        public void CloseUI()
+        {
+            _currentPopup.gameObject.SetActive(false);
+        }
 
     }
 }
