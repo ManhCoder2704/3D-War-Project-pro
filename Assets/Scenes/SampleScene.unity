@@ -5029,6 +5029,7 @@ Transform:
   - {fileID: 496033044}
   - {fileID: 421250029}
   - {fileID: 715492872}
+  - {fileID: 1141777400}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &363758040
@@ -16451,6 +16452,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1708406921}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1141777399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1141777400}
+  m_Layer: 0
+  m_Name: AirDrop ==========
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1141777400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141777399}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 356037227}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1141931535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17455,10 +17487,9 @@ MonoBehaviour:
   _tileSize: 4
   _mapWidth: 16
   _mapHeight: 24
-  leader: {fileID: 0}
-  sniper: {fileID: 0}
-  carrior: {fileID: 0}
-  trencher: {fileID: 0}
+  _packageContainer: {fileID: 1141777400}
+  _packagePrefab: {fileID: 4831751979939781446, guid: 3c3caaa7da99ce6489906abe3661b7af,
+    type: 3}
 --- !u!4 &1251982416
 Transform:
   m_ObjectHideFlags: 0

@@ -8,6 +8,11 @@ public class GameplayManager : Singleton<GameplayManager>
 
     private IState _currentStateInstance;
 
+    [SerializeField]
+    private float _firstTimeToDropPackage = 20f;
+
+    private bool _isPackageDropped = false;
+
     internal void ChangeState(GameState gameState)
     {
         if (_currentState == gameState) return;
@@ -54,6 +59,16 @@ public class GameplayManager : Singleton<GameplayManager>
     private void Update()
     {
         _currentStateInstance?.OnExecute();
+
+        if (!_isPackageDropped)
+        {
+            if (_firstTimeToDropPackage <= 0)
+            {
+                _isPackageDropped = true;
+                SpawnManager.Instance.SpawnAirDrop();
+            }
+            _firstTimeToDropPackage -= Time.deltaTime;
+        }
     }
 
     public void MouseVisible(bool status)

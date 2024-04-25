@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -70,5 +71,20 @@ public class SpawnManager : Singleton<SpawnManager>
         SpawnCharacter();
         yield return null;
         onComplete?.Invoke();
+    }
+
+    public void SpawnAirDrop()
+    {
+        int height = UnityEngine.Random.Range(_mapHeight / 4, _mapHeight / 2);
+        int width = UnityEngine.Random.Range(0, _mapWidth);
+        int index = width + height * _mapWidth;
+        Package packageAlly = Instantiate(_packagePrefab, _packageContainer);
+        Package packageEnemy = Instantiate(_packagePrefab, _packageContainer);
+
+        Vector3 allyPos = enemyTiles[index].transform.position;
+        packageAlly.transform.position = allyPos + Vector3.up * 50;
+
+        Vector3 enemyPos = allyTiles[index].transform.position;
+        packageEnemy.transform.position = enemyPos + Vector3.up * 50;
     }
 }
