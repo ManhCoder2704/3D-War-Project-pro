@@ -5642,6 +5642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_isDestroyOnLoad: 1
+  _firstTimeToDropPackage: 20
 --- !u!4 &418098556
 Transform:
   m_ObjectHideFlags: 0
