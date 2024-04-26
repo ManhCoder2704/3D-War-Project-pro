@@ -16,7 +16,7 @@ public class Tile : MonoBehaviour
     public bool IsThrownBomb { get => _isThrownBomb; set => _isThrownBomb = value; }
     private void OnEnable()
     {
-        _throwBombPos = new Vector3(transform.position.x, transform.position.y + 10f, transform.position.z);
+        _throwBombPos = new Vector3(_block.transform.position.x, _block.transform.position.y + 10f, _block.transform.position.z);
     }
     public void OnOffBlock(bool status)
     {
