@@ -28,11 +28,7 @@ public class ButtonBlock : MonoBehaviour
         this._btn.interactable = false;
         if (_isEnemy)
         {
-            if (_linkedTile.IsDigged)
-            {
-                _linkedTile.OnOffBlock(true);
-                _linkedTile.IsThrownBomb = !_isThrown;
-            }
+            _linkedTile.BombDrop();
         }
         else
         {
